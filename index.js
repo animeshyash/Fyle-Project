@@ -1,4 +1,4 @@
-const url = `https://api.github.com/users/animeshyash`;
+const url = `https://api.github.com/users/johnpapa`;
 const repo_url = `${url}/repos`;
 let userName = document.querySelector("#name");
 let userBio = document.querySelector("#bio");
@@ -45,7 +45,8 @@ async function updateData(start) {
     right.classList.remove("disable");
 
   userName.innerHTML = data.name;
-  userBio.innerHTML = data.bio.length > 100 ? `${data.bio.substring(0, 100)}....` : `${data.bio}`;
+  userBio.innerHTML =
+    data.bio.length > 100 ? `${data.bio.substring(0, 100)}....` : `${data.bio}`;
   userLocation.innerHTML = data.location;
   githubUrl.innerHTML = data.html_url;
   twitterUrl.innerHTML = `https://twitter.com/${data.twitter_username}`;
@@ -56,7 +57,7 @@ async function updateData(start) {
     if (count < 10) {
       const repo_box = document.createElement("div");
       repo_box.classList.add("repos_box");
-      const lang_url = `https://api.github.com/repos/animeshyash/${repo_data[i].name}/languages`;
+      const lang_url = `https://api.github.com/repos/johnpapa/${repo_data[i].name}/languages`;
       await fetchLang(lang_url);
 
       const customElement = document.createElement("div");
