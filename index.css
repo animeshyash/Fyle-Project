@@ -1,0 +1,243 @@
+*,
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.mainDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.subDiv {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+  width: 40%;
+}
+
+.formDiv {
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.inputDiv {
+  margin-bottom: 10px;
+  width: 100%;
+  position: relative;
+}
+
+.labelTag {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.icon {
+  text-align: center;
+  cursor: pointer;
+  font-size: 20px;
+  position: relative;
+}
+
+.grossInfo {
+  display: none;
+  color: white;
+  width: 120px;
+  height: 85px;
+  border-radius: 5px;
+  position: absolute;
+  background-color: #4c5d6b;
+  padding: 5px;
+  top: -90px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  left: -70px;
+}
+
+.errorInfo {
+  display: none;
+  color: white;
+  width: 80px;
+  height: 60px;
+  border-radius: 5px;
+  position: absolute;
+  background-color: #4c5d6b;
+  padding: 5px;
+  top: -65px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  left: -70px;
+}
+
+.errorInfoShow {
+  display: block;
+}
+
+.grossInfoShow {
+  display: block;
+}
+
+.labelTag {
+  margin-bottom: 3px;
+  font-size: 20px;
+}
+
+.inputTag {
+  font-size: 16px;
+  outline: none;
+  border-radius: 5px;
+  width: 100%;
+  padding: 12px 13px;
+}
+
+.btn {
+  margin-top: 25px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 20px;
+  padding: 10px 0px;
+  border-radius: 5px;
+  background-color: #6559f5;
+  color: white;
+  border: none;
+}
+
+.result {
+  border: 1px solid black;
+  height: 80%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+}
+
+.btnClose {
+  padding: 8px 10px;
+  width: max-content;
+  font-size: medium;
+  margin-top: 60px;
+}
+
+.headDiv {
+  text-align: center;
+  box-sizing: content-box;
+  padding: 30px;
+  width: 650px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 4px;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin: 4px;
+  font-weight: 300;
+}
+
+h5 {
+  font-size: 1.1rem;
+  margin: 4px;
+  font-weight: 300;
+}
+
+.formDivHide {
+  display: none;
+}
+
+.showHide {
+  display: flex;
+}
+
+.exclamation {
+  font-size: 22px;
+  cursor: pointer;
+  font-weight: 500;
+  position: absolute;
+  top: 39px;
+  right: 13px;
+  color: rgb(121, 121, 245);
+  display: none;
+}
+
+.showExclam {
+  display: inline;
+}
+
+@media only screen and (min-width: 992px) {
+  .subDiv {
+    width: 40%;
+    height: 80%;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .subDiv {
+    width: 70%;
+    height: 80%;
+    font-size: 14px;
+  }
+
+  .headDiv {
+    text-align: center;
+    box-sizing: content-box;
+    padding: 30px;
+    width: 550px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .subDiv {
+    width: 60%;
+    height: 80%;
+  }
+
+  .headDiv {
+    text-align: center;
+    box-sizing: content-box;
+    padding: 30px;
+    width: 650px;
+  }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 600px) {
+  .subDiv {
+    width: 60%;
+    height: 80%;
+  }
+
+  .headDiv {
+    text-align: center;
+    box-sizing: content-box;
+    padding: 30px;
+    width: 340px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .subDiv {
+    width: 80%;
+    height: 80%;
+    font-size: 14px;
+  }
+
+  .headDiv {
+    text-align: center;
+    box-sizing: content-box;
+    padding: 30px;
+    width: 320px;
+  }
+}

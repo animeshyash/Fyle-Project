@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="mainDiv">
+      <div class="subDiv">
+        <form class="formDiv" id="form">
+          <div class="inputDiv">
+            <div class="labelTag">
+              <label class="labelTag" for="">Enter gross annual income</label>
+              <i class="fa fa-question-circle icon" id="grossInfoIcon"
+                ><span class="grossInfo" id="grossInfo"
+                  >Gross annual income is your total salary in a year before any
+                  deductions</span
+                ></i
+              >
+            </div>
+            <input
+              class="inputTag"
+              maxlength="45"
+              type="text"
+              id="gross"
+              placeholder="Enter gross annual income"
+            />
+            <span class="exclamation" id="grossExclam"
+              >ⓘ<span class="errorInfo" id="errorInfoGross"
+                >Value must be only numbers</span
+              ></span
+            >
+          </div>
+
+          <div class="inputDiv">
+            <div class="labelTag">
+              <label class="labelTag" for="">Enter extra income</label>
+              <i class="fa fa-question-circle icon" id="extraInfoIcon"
+                ><span class="grossInfo" id="extraInfo"
+                  >Extra income is your income other than salary in a year
+                  before any deductions</span
+                ></i
+              >
+            </div>
+            <input
+              class="inputTag"
+              maxlength="45"
+              type="text"
+              id="extra"
+              placeholder="Enter extra income from other sources"
+            />
+            <span class="exclamation" id="extraExclam"
+              >ⓘ<span class="errorInfo" id="errorInfoExtra"
+                >Value must be only numbers</span
+              ></span
+            >
+          </div>
+
+          <div class="inputDiv">
+            <div class="labelTag">
+              <label class="labelTag" for="">Enter age group</label>
+              <i class="fa fa-question-circle icon" id="ageInfoIcon"
+                ><span class="grossInfo" id="ageInfo"
+                  >Age group is the range of age between which your age lie for
+                  taxes`</span
+                ></i
+              >
+            </div>
+            <select name="" class="inputTag" id="age">
+              <option value="">Please select age range</option>
+              <option value="40">less than 40</option>
+              <option value="60">40 to 60</option>
+              <option value="70">greater than 60</option>
+            </select>
+          </div>
+
+          <div class="inputDiv">
+            <div class="labelTag">
+              <label class="labelTag" for=""
+                >Enter total applicable deductions</label
+              >
+              <i class="fa fa-question-circle icon" id="deductionsInfoIcon">
+                <span class="grossInfo" id="deductionsInfo"
+                  >Applicable deductions are the total deductions on your salary
+                  in a year</span
+                >
+              </i>
+            </div>
+            <input
+              class="inputTag"
+              type="text"
+              id="deductions"
+              maxlength="45"
+              placeholder="Add total applicable deductions"
+            />
+            <span class="exclamation" id="deductionsExclam"
+              >ⓘ
+              <span class="errorInfo" id="errorInfoDeductions"
+                >Value must be only numbers</span
+              ></span
+            >
+          </div>
+          <button class="btn" id="submitBtn">Submit</button>
+        </form>
+        <div class="result" id="resultDiv">
+          <div class="headDiv">
+            <h1>Your overall income will be</h1>
+            <h3 id="resultAmt"></h3>
+            <h5>after tax deductions</h5>
+            <button class="btn btnClose" id="closeBtn">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
